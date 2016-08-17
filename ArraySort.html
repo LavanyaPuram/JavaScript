@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+     <h3> Test Page With some content in it</h3>
+        <!--<div id="test">
+        <marquee direction="right" width="800" height="300" onmouseover="stop();" onmouseout="start();"><img src="../images/calendar.gif"</marquee>
+        <marquee behaviour="alternate" direction="left">This text will bounce</marquee>
+            </div>-->
+        <p id="result" name="result"></p>
+        <script type="text/javascript">
+        var arr1 = [20, 100, 6, 1, 30, 8, 4, 2];
+        var arr2 = ["Zebra","World","Hello","Book"];
+        var tarr = arr2.sort();
+        alert(Array.isArray(arr2));
+        arr1.sort(function (a, b) {
+            console.log("Compare" + a + "and" + b)
+            return a - b;
+        });
+            // Less than 0: "a" is sorted to be a lower index than "b".
+           // Zero: "a" and "b" are considered equal, and no sorting is performed.
+           //  Greater than 0: "b" is sorted to be a lower index than "a".
+        document.getElementById("result").innerHTML = arr1;
+    </script>
+    </body>
+</html>

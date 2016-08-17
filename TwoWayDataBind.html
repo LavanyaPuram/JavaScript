@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function GetValue()
+            {
+                var v1 = document.getElementById("text1").value;
+                document.getElementById("p1").innerHTML = v1;
+                console.log(v1);
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Two way Data-Binding Example</h3>
+        Enter Text Here : <input type="text" id="text1" name="text1" onkeyup="javascript:GetValue();" /><br /><br />
+        <b>You Entered :<p id="p1" name="p1" style="color:darkmagenta"></p></b>
+    </body>
+</html>

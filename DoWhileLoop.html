@@ -1,0 +1,25 @@
+<html>
+    <head>
+     <script type="text/javascript">
+         // Display all even numbers less than the entered number, then propmt for continue.
+         do{
+             var start = 0;
+             var target = Number(prompt("Enter a Target Number"));
+             while(start <= target)
+             {
+                 document.write(start + "<br/>");
+                 start = start + 2;
+             }
+             do {
+                 var choice = prompt("Do You want to continue? Yes or No").toUpperCase();
+                 if (choice != "YES" && choice != "NO") {
+                     alert("Invalid choice. Please enter Yes or No");
+                 }
+             } while (choice != "YES" && choice != "NO");
+         }while (choice == "YES");
+     </script>
+    </head>
+    <body>
+        <div id="divresult" name="divresult"></div>
+    </body>
+</html>
